@@ -3,7 +3,14 @@
 int main()
 {
     const char secret = 'j';
-    const char guess = 'k';
+    char guess;
+
+    printf("Buchstabe: ");
+    if (scanf(" %c", &guess) != 1)
+    {
+        printf("Ungültige Eingabe!\n");
+        return 1;
+    }
 
     if (guess == secret)
     {
