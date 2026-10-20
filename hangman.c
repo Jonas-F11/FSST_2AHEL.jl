@@ -2,7 +2,7 @@
 
 int main()
 {
-    const char secret = 'j';
+    const char secret[] = "OGSAFTLT";
     char guess;
 
     printf("Buchstabe: ");
@@ -12,12 +12,16 @@ int main()
         return 1;
     }
 
-    if (guess == secret)
+    int treffer = 0;
+    for (int i = 0; i < (sizeof(secret) / sizeof(char)) - 1; i ++)
     {
-        printf("Treffer %c!\n", secret);
-    } else 
-    {
-        printf("%c ist Falsch!\n", guess);
+        if ((secret[i]) == guess) {
+            treffer++;
+        }
     }
+
+    printf("Treffer: %d!", treffer);
+
+   
     return 0;
 }
