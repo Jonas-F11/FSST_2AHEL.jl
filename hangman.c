@@ -3,7 +3,14 @@
 int main()
 {
     const char secret[] = "OGSAFTLT";
+    const int len = sizeof(secret) - 1;
+    char guessed[sizeof(secret) - 1];
     char guess;
+
+    //Variable initialisieren: _ _ _ _ _ _ _ _
+    for (int i = 0; i < len; i++){
+        guessed[i] = '_';
+    }
 
     printf("Buchstabe: ");
     if (scanf(" %c", &guess) != 1)
@@ -17,7 +24,12 @@ int main()
     {
         if ((secret[i]) == guess) {
             treffer++;
+            guessed[i] = guess;
         }
+    }
+
+    for (int i = 0; i < len; i++){
+        printf("%c ", guessed[i]);
     }
 
     printf("Treffer: %d!", treffer);
