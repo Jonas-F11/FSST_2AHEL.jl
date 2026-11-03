@@ -1,5 +1,16 @@
 #include <stdio.h>
 
+int countHits(const char secret[], const char guess) {
+    int treffer = 0;
+    for (int i = 0; i < sizeof(secret) - 1; i ++)
+    {
+        if ((secret[i]) == guess) {
+            treffer++;
+        }
+    }
+    return treffer;
+}
+
 int main()
 {
     const char secret[] = "OGSAFTLT";
@@ -7,7 +18,7 @@ int main()
     char guessed[sizeof(secret) - 1];
     char guess;
 
-    //Variable initialisieren: _ _ _ _ _ _ _ _
+    // Variable initialisieren: _ _ _ _ _ _ _ _
     for (int i = 0; i < len; i++){
         guessed[i] = '_';
     }
@@ -19,7 +30,7 @@ int main()
         return 1;
     }
 
-    int treffer = 0;
+    /*int treffer = 0;
     for (int i = 0; i < (sizeof(secret) / sizeof(char)) - 1; i ++)
     {
         if ((secret[i]) == guess) {
@@ -31,7 +42,8 @@ int main()
     for (int i = 0; i < len; i++){
         printf("%c ", guessed[i]);
     }
-
+    */
+   int treffer = countHits(secret, guess);
     printf("Treffer: %d!", treffer);
 
    
