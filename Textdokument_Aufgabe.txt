@@ -1,0 +1,60 @@
+Kundenauftrag: Berechnung der Parkgebühren für einen kleinen Parkplatz
+1. Ausgangssituation
+Ich betreibe einen kleinen privaten Parkplatz in der Nähe eines Einkaufszentrums. Bisher berechne ich die Parkgebühren für meine Kunden immer im Kopf. Das führt gelegentlich zu Fehlern, besonders wenn mehrere Kunden gleichzeitig bezahlen möchten.
+
+Deshalb benötige ich ein kleines Programm, das mir bei der Berechnung der Parkgebühren hilft.
+
+2. Dein Anliegen
+Ich möchte die Parkgebühren schnell und zuverlässig berechnen können. Das Programm soll mir anzeigen, wie viel ein Kunde für seine Parkzeit bezahlen muss.
+
+Dabei sollen unterschiedliche Parkzeiten berücksichtigt werden.
+
+3. Gewünschte Funktionen
+Das Programm soll folgende Funktionen bieten:
+
+Der Benutzer kann die Anzahl der geparkten Stunden eingeben.
+
+Die erste Stunde kostet 2 €.
+
+Jede weitere angefangene Stunde kostet 1,50 €.
+
+Bei einer Parkdauer von mehr als 8 Stunden wird automatisch ein Tagespreis von 12 € berechnet.
+
+Eine Parkdauer von 0 Stunden oder weniger soll nicht akzeptiert werden.
+
+Nach der Berechnung soll der zu zahlende Gesamtbetrag angezeigt werden.
+
+4. Bedienung
+Wenn ich das Programm starte, möchte ich nach der Parkdauer gefragt werden.
+
+Anschließend soll das Programm den entsprechenden Preis berechnen und übersichtlich ausgeben.
+
+Nach der Ausgabe soll ich auswählen können, ob ich einen weiteren Kunden abrechnen möchte oder das Programm beenden will.
+
+5. Beispiel
+Ein Kunde hat sein Auto 4 Stunden geparkt.
+
+Das Programm soll folgende Berechnung durchführen:
+
+Erste Stunde: 2,00 €
+
+Zweite Stunde: 1,50 €
+
+Dritte Stunde: 1,50 €
+
+Vierte Stunde: 1,50 €
+
+Gesamtbetrag: 6,50 €
+
+Ein anderer Kunde parkt 10 Stunden. In diesem Fall zahlt er den Tagespreis von 12,00 €.
+
+6. Besondere Wünsche
+Die Geldbeträge sollen immer mit zwei Nachkommastellen angezeigt werden.
+
+Bei ungültigen Eingaben soll eine verständliche Fehlermeldung erscheinen.
+
+Das Programm soll mehrere Kunden hintereinander abrechnen können.
+
+Die Bedienung soll möglichst einfach und übersichtlich sein.
+
+Ich möchte das Programm hauptsächlich im täglichen Betrieb verwenden, deshalb ist mir eine schnelle und unkomplizierte Bedienung besonders wichtig.
