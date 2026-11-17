@@ -26,7 +26,7 @@ int main()
 
         if (zahl == geheim)
         {
-            printf("Ja genau! Die zahlen sind gleich gross!\n");
+            printf("Erraten! Die zahl ist %d!\n", geheim);
             break;
         }
         else if (zahl > geheim)
